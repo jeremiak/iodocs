@@ -28,7 +28,9 @@
     "redis": ">= 0.7.0",
     "querystring": "0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+      "grunt": "*"
+  },
   "main": "index",
   "engines": {
     "node": ">= 0.4.0"
