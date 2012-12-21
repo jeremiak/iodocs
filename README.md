@@ -111,6 +111,38 @@ Example:
 }
 ```
 
+IODocs also supports URI parameters, and are declared by putting `:param_1_name` in the URI.
+
+Example:
+
+```js
+{
+    "endpoints": [
+        {
+            "name": "Resource Group A",
+            "methods": [
+                {
+                    "MethodName": "Method A1",
+                    "Synopsis": "Grabs information from the A1 data set",
+                    "HTTPMethod": "GET",
+                    "URI": "/a1/grab/:param_1_name",
+                    "RequiresOAuth": "N",
+                    "parameters": [
+                        {
+                            "Name": "param_1_name",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Description of the first parameter."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
 TOP-LEVEL SERVICE CONFIG DETAILS - apiconfig.json
 -------------------------------------------------
 The *apiconfig.json* file contains high-level information about an API.
