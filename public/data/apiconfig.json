@@ -38,5 +38,13 @@
         "protocol": "http",
         "baseURL": "requestb.in",
         "publicPath": "/"
+    },
+    "tout": {
+        "name": "Interactive documentation for the Tout API",
+        "protocol": "https",
+        "baseURL": "api.tout.com",
+        "publicPath": "/api/v1/",
+        "auth": "key",
+        "keyParam": "access_token"
     }
 }
